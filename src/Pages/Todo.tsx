@@ -57,7 +57,7 @@ const Todo: React.FC = () => {
 
   return (
     <div className="container">
-      <h1>To Do List</h1>
+      <h1>Whats on the Agenda?</h1>
       <InputGroup className="mb-3">
         {/* <InputGroup.Text id="basic-addon1">To Do</InputGroup.Text> */}
         <Form.Control
