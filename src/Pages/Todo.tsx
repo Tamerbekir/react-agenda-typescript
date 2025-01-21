@@ -42,9 +42,9 @@ const Todo: React.FC = () => {
   };
 
   const handleDeleteItem = (index: number) => {
-    const updateSubmit = submitItem.filter((_, keyItem) => keyItem != index);
+    const updateSubmit = submitItem.filter((todo, keyItem) => keyItem != index);
     setSubmitItem(updateSubmit);
-    localStorage.setItem("submitItem", JSON.stringify(submitItem));
+    localStorage.setItem("submitItem", JSON.stringify(updateSubmit));
   };
 
   useEffect(() => {
