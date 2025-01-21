@@ -19,7 +19,7 @@ const Todo: React.FC = () => {
 
   const [submitItem, setSubmitItem] = useState<TodoList[]>([]);
 
-  const [error, setError] = useState("");
+  // const [error, setError] = useState("");
 
   const handleAddItemChange = (event: ChangeEvent<HTMLInputElement>) => {
     const { name, value } = event.target;
@@ -42,7 +42,8 @@ const Todo: React.FC = () => {
   };
 
   const handleDeleteItem = (index: number) => {
-    const updateSubmit = submitItem.filter((todo, keyItem) => keyItem != index);
+    const updateSubmit = [...submitItem];
+    updateSubmit.splice(index, 1);
     setSubmitItem(updateSubmit);
     localStorage.setItem("submitItem", JSON.stringify(updateSubmit));
   };
@@ -106,7 +107,7 @@ const Todo: React.FC = () => {
             </Button>
           </div>
         ))}
-        {error && <p className="error">{error}</p>}
+        {/* {error && <p className="error">{error}</p>} */}
       </div>
     </div>
   );

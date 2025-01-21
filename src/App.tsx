@@ -1,4 +1,5 @@
-import { Todo, Settings } from "./Pages/index.js";
+import Todo from "./Pages/Todo";
+import Settings from "./Pages/Todo";
 import { Routes, Route } from "react-router-dom";
 
 import "./App.css";

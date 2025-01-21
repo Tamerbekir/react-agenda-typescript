@@ -1,23 +1,23 @@
-import Todo from "../Pages/index";
-import { useState } from "react";
+// import Todo from "../Pages/index";
+// import { useState } from "react";
 
-interface AgendaProps {
-  Todo: agenda;
-}
+// interface AgendaProps {
+//   Todo: agenda;
+// }
 
-interface TodoList {
-  item: "";
-  date: "";
-  complete: false;
-}
-const Agenda: React.FC<AgendaProps> = ({ agenda }) => {
-  const [submitAgendaItem, setSubmitAgendaItem] = useState<TodoList[]>([]);
+// interface TodoList {
+//   item: "";
+//   date: "";
+//   complete: false;
+// }
+// const Agenda: React.FC<AgendaProps> = ({ agenda }) => {
+//   const [submitAgendaItem, setSubmitAgendaItem] = useState<TodoList[]>([]);
 
-  return (
-    <div>
-      <h1>{agenda.item}</h1>
-    </div>
-  );
-};
+//   return (
+//     <div>
+//       <h1>{agenda.item}</h1>
+//     </div>
+//   );
+// };
 
-export default Agenda;
+// export default Agenda;
